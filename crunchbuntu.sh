@@ -1,3 +1,5 @@
+# ANG: crunchbang Waldorf on Ubuntu 14.04
+# modified for install after GNOME
 mkdir crunchbuntu && pushd crunchbuntu
 
 # libvala dependency was renamed to vala in trusty, get an older package
@@ -31,5 +33,7 @@ sed -i -E 's/(gtk-theme-name\s*=).*/\1\"cb-waldorf-xoraxiom\"/g' ~/.gtkrc-2.0
 sed -i -E 's/(gtk-icon-theme-name\s*=).*/\1\"Faenza-Dark-CrunchBang\"/g' ~/.gtkrc-2.0
 
 # start X and the Crunchbang auto setup
+# ANG start
 #popd && rm -r crunchbuntu
+# ANG end
 sudo shutdown -r now
