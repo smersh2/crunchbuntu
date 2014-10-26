@@ -18,7 +18,7 @@ sudo apt-get install -f
 # set up home directory
 cp -R /etc/skel/. ~/
 
-# set up boot theme
+# set up boot theme: ANG - needs to be set up later - boot-customizer ?
 sudo cp /etc/default/grub /etc/default/grub.orig
 sudo sed -i -E 's/(GRUB_CMDLINE_LINUX_DEFAULT=).*/\1"--verbose nosplash debug"/g' /etc/default/grub
 sudo update-grub
