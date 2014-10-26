@@ -38,6 +38,6 @@ sed -i -E 's/(gtk-icon-theme-name\s*=).*/\1\"Faenza-Dark-CrunchBang\"/g' ~/.gtkr
 # start X and the Crunchbang auto setup
 # ANG start
 #popd && rm -r crunchbuntu
-# ANG: next line hanging in VMware
+# ANG: next line hanging in VMware. What about real machine ?
 sudo shutdown -r now
 # ANG end
