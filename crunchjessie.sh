@@ -1,6 +1,6 @@
 # ANG: crunchbang Waldorf on Debian 8 Jessie B2
 # modified for install after GNOME
-mkdir crunchbuntu && pushd crunchbuntu
+mkdir crunchjessie && pushd crunchjessie
 
 # libvala dependency was renamed to vala in trusty, get an older package
 wget -c https://launchpad.net/~vala-team/+archive/ubuntu/ppa/+files/libvala-0.10-0_0.10.4-1ubuntu1~lucid1_amd64.deb
@@ -10,7 +10,10 @@ sudo dpkg -i libvala-*
 sudo apt-get -y --install-recommends install software-properties-common
 sudo apt-add-repository 'deb http://packages.crunchbang.org/waldorf waldorf main' && sudo apt-key adv --fetch-keys http://packages.crunchbang.org/waldorf-dev/crunchbang.key
 sudo apt-get -y update
+# ANG: use gdm3 ! - try slim later
 sudo apt-get -y --install-recommends install cb-metapackage cairo-compmgr faenza-crunchbang-icon-theme
+# ANG: error during install tint2 - sudo apt-get install -f fixes
+sudo apt-get install -f
 
 # set up home directory
 cp -R /etc/skel/. ~/
