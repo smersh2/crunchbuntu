@@ -30,10 +30,10 @@ sudo sed -i -E 's/(GRUB_CMDLINE_LINUX_DEFAULT=).*/\1"--verbose nosplash debug"/g
 sudo update-grub
 
 # gtk-3.8+ breaks Waldorf theme, use an alternative
-# ANG: for debian 8 jessie themes are still broken. Needs to be redone
 wget -c https://github.com/xoraxiom/openbox-gtk-themes/archive/master.zip
 unzip master.zip
 sudo cp -r openbox-gtk-themes-master/cb-waldorf-xoraxiom /usr/share/themes
+# ANG: for LMDE no settings.ini + sed is not working
 sudo cp /root/.config/gtk-3.0/settings.ini /root/.config/gtk-3.0/settings.ini.orig
 sudo sed -i -E 's/(gtk-theme-name\s*=).*/\1cb-waldorf-xoraxiom/g' /root/.config/gtk-3.0/settings.ini
 cp ~/.config/gtk-3.0/settings.ini ~/.config/gtk-3.0/settings.ini.orig
