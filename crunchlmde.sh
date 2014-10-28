@@ -1,8 +1,10 @@
 # ANG: crunchbang Waldorf on LMDE:
 # ANG: installed as debian 7 netinstall. Next cb-netinstall => crunchbang
 # Next /etc/apt/ changed for /etc/apt/ from LMDE, update/upgrade/dist-upgrade
-# Correct waldorf theme (without fixing vala):
-
+# Correct waldorf theme (without fixing vala - no dependency problem):
+# libvala dependency was renamed to vala in trusty, get an older package
+#wget -c https://launchpad.net/~vala-team/+archive/ubuntu/ppa/+files/libvala-0.10-0_0.10.4-1ubuntu1~lucid1_amd64.deb
+#sudo dpkg -i libvala-*
 # gtk-3.8+ breaks Waldorf theme, use an alternative
 wget -c https://github.com/xoraxiom/openbox-gtk-themes/archive/master.zip
 unzip master.zip
