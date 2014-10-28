@@ -13,7 +13,7 @@ sudo apt-get -y --install-recommends install software-properties-common
 ### ANG: error when adding to lmde: adding manually to 
 ### /etc/apt/sources.list.d/official-package-repositories.list
 ###
-sudo apt-add-repository 'deb http://packages.crunchbang.org/waldorf waldorf main'
+### sudo apt-add-repository 'deb http://packages.crunchbang.org/waldorf waldorf main'
 sudo apt-key adv --fetch-keys http://packages.crunchbang.org/waldorf-dev/crunchbang.key
 sudo apt-get -y update
 # ANG: use gdm3 ! - try slim later
