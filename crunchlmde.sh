@@ -1,4 +1,6 @@
 # ANG: crunchbang Waldorf on LMDE:
+# wget https://github.com/smersh2/crunchbuntu/archive/master.tar.gz
+# tar -xpf master.tar.gz
 # ANG: installed as debian 7 netinstall. Next cb-netinstall => crunchbang
 # Next /etc/apt/ changed for /etc/apt/ from LMDE, update/upgrade/dist-upgrade
 # Correct waldorf theme (without fixing vala - no dependency problem):
